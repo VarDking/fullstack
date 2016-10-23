@@ -1,4 +1,5 @@
 # swapfile
+
 1. 创建swap文件
 
 	```
@@ -18,23 +19,25 @@
 	```
 3. 关闭swap功能
 	- 关闭文件的swap功能
+
 	  ```
 	  # swapoff /swapfile1
 	  # swapon -s
 	  ```
 	- 关闭linux swap功能
+
 	  临时修改
 	  ```
 	  # sysctl vm.swappiness=VALUE
 	  # sysctl vm.swappiness=20  //value值越高，置换越激烈，默认60
 
 	  or
-	  
+
 	  # sysctl vm.swappiness=VALUE
 	  # sysctl vm.swappiness=20
 	  ```
      永久修改：
-     
+
      ```js
      echo 'vm.swappiness=30' >> /etc/sysctl.conf
      ```
