@@ -1,2 +1,2 @@
-# study
-记录平时学习
+# fullstack learning
+Fullstack skill learning docs.
