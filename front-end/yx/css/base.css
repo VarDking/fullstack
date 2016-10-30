@@ -1,0 +1,17 @@
+body, h1, h2, h3, p, ul {
+    margin : 0
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+body {
+    min-width   : 1260px;
+    font-size   : 14px;
+    font-family : "Microsoft YaHei UI";
+}

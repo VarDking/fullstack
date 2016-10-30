@@ -1,0 +1,78 @@
+.m-head {
+    height       : 86px;
+    width        : 1260px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.ul-logo {
+    width    : 292px;
+    float    : left;
+    overflow : hidden;
+}
+
+.ul-logo a {
+    width       : 292px;
+    height      : 86px;
+    display     : block;
+    text-indent : -9999em;
+    background  : url('../img/logo.png') no-repeat;
+}
+
+.m-nav {
+    float : right;
+}
+
+.m-nav li {
+    float      : left;
+    margin     : 0 20px;
+    text-align : center;
+}
+
+.m-nav li a {
+    display     : block;
+    margin-left : 10px;
+    line-height : 74px;
+    color       : #333;
+    padding     : 0 22px;
+    font-size   : 20px;
+}
+
+.m-nav li a.curr, .m-nav li a:hover {
+    border-top : 2px solid #16c95d;
+    color      : #16c95d;
+}
+
+.m-banner {
+    position   : relative;
+    height     : 677px;
+    background : url('../img/banner.jpg') top center;
+}
+
+.g-layout {
+    position     : relative;
+    width        : 1260px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.m-banner .log, .m-banner .phone, .m-download .er-img, .m-download a, .m-download:after {
+    background: url('../img/bg1.png') no-repeat 0 0;
+}
+
+.g-layout .phone {
+    left: 0;
+    top: 88px;
+    width: 594px;
+    height: 650px;
+    position: absolute;
+    background-position: -5px 0;
+}
+
+.g-layout .log {
+    width: 564px;
+    height: 302px;
+    float: right;
+    margin-top: 98px;
+    background-position: -5px -650px;
+}
