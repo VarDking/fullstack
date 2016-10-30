@@ -5,6 +5,7 @@
 body{
     background-color:#1d7db1;
 }
+
 .phone {
     width:280px;
     height: 580px;
@@ -15,21 +16,60 @@ body{
     background-color:#ffffff;
 }
 
+.phone-head {
+    width: 100px;
+    height: 22px;
+    margin: 14px auto;
+}
+
+.proximity-sensor {
+    width: 8px;
+    height: 8px;
+    margin: 0 auto;
+    border-radius: 4px;
+    background-color: #ECECEC;
+}
+
+.camera {
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin: 6px 10px;
+    border-radius: 5px;
+    background-color: #7A7A7B;
+}
+
+.receiver {
+    width: 50px;
+    height: 5px;
+    float: left;
+    margin-top: 8px;
+    border-radius: 2px;
+    background-color: #ECECEC;
+}
+
+.touch-id{
+    height: 38px;
+    width: 38px;
+    border-radius: 21px;
+    margin: 4px auto;
+    border: 2px solid #E1E2E3   ;
+}
 .screen {
-    width:260px;
-    position :relative;
+    width: 260px;
+    position: relative;
     height: 450px;
-    margin: 54px 8px;
-    border:2px solid #000000;
-    padding-top :20px;
-    overflow:scroll;
-    background-color:#ECEBE9;
+    margin: 0 auto;
+    border: 2px solid #000000;
+    padding-top: 20px;
+    overflow: scroll;
+    background-color: #ECEBE9;
 }::-webkit-scrollbar{
      display:none;
  }
 
 .nav-btn {
-    top:80px;
+    top:62px;
     left:20px;
     width:60px;
     height:60px;
