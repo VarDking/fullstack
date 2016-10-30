@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>扫描登录</title>
+	<style>
+
+		* {
+			margin  : 0;
+			padding : 0;
+		}
+
+		html, body {
+			width            : 100%;
+			height           : 100%;
+			font             : 14px/1 "微软雅黑", Tahoma, Geneva, sans-serif;
+			color            : #666666;
+			background-color : #F1F1F1;
+		}
+
+		body {
+			background : url("asset/bg.jpg") repeat-y;
+		}
+
+		input, img {
+			vertical-align : middle;
+		}
+
+		.f-tc {
+			text-align : center;
+		}
+
+		.f-hide {
+			display : none;
+		}
+
+		.g-mt30 {
+			margin-top : 30px;
+		}
+
+		.g-mt50 {
+			margin-top : 50px;
+		}
+
+		.s-c-333 {
+			color : #333;
+		}
+
+		.s-f18 {
+			font-size : 18px;
+		}
+
+		.logo-full {
+			display      : inline-block;
+			position     : absolute;
+			top          : 100px;
+			left         : 100px;
+			height       : 38px;
+			padding-left : 50px;
+			line-height  : 38px;
+			color        : #ffffff;
+			font-size    : 20px;
+		}
+
+		.m-scancode {
+			position         : absolute;
+			left             : 50%;
+			top              : 50%;
+			width            : 390px;
+			height           : 620px;
+			margin-left      : -195px;
+			margin-top       : -310px;
+			padding-top      : 73px;
+			background-color : #ffffff;
+			border-radius    : 5px;
+			box-sizing       : border-box;
+		}
+
+		.m-scancode dl {
+			margin-left  : 40px;
+			margin-right : 40px;
+			padding-left : 35px;
+			text-align   : left;
+			line-height  : 1.5;
+		}
+
+		.m-scancode dl.a {
+			background : url('asset/yx_11.png') 0 center no-repeat;
+		}
+
+		.m-scancode dl.b {
+			background : url('asset/yx_14.png') 0 center no-repeat;
+		}
+
+	</style>
+</head>
+<body>
+<div class = "bg-full">
+
+	<a title = "微信" class = "logo-full" target = "_blank">微信</a>
+
+	<div class = "m-scancode f-tc">
+		<div><img src = "./asset/1477814900457.png" alt = ""></div>
+		<div class = "s-f18 s-c-333 g-mt30">扫描二维码使用微信WEB版功能</div>
+		<dl class = "a g-mt50">
+			<dt>登录微信APP</dt>
+			<dd>手机上 <a target = "_blank" href = "#" class = "s-c-46608C">安装</a> 登录微信</dd>
+		</dl>
+		<dl class = "b g-mt30">
+			<dt>使用“扫一扫”</dt>
+			<dd>从“社区列表”或者社区“发布”页面，使用“扫一扫”，扫码使用微信WEB版功能。
+			</dd>
+		</dl>
+	</div>
+
+	<div class = "m-scancode s-success f-tc f-hide">
+		<div class = "s-f22 s-c-333 g-mt85">扫描成功</div>
+		<div class = "s-f16 g-mt30">请在手机上确认登录</div>
+		<div class = "s-f14 g-mt175"><a href = "javascript:;" class = "s-c-46608C btn-back">返回二维码扫描页面</a></div>
+	</div>
+
+</div>
+</body>
+</html>
