@@ -117,7 +117,19 @@
     left: 18px;
     top: -87px;
     border-radius: 50%;
+    z-index: 3;
     position: absolute;
+    background-color: #ff0000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.3) inset;
+}
+
+.scarf-tail{
+    width: 74px;
+    height: 190px;
+    position: absolute;
+    left: 85px;
+    transform: rotate(12deg);
+    border-radius: 0 0 26px 26px;
     background-color: #ff0000;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.3) inset;
 }
