@@ -3,8 +3,6 @@
     padding:0;
 }
 
-
-
 .qq {
     width:470px;
     height:540px;
@@ -16,7 +14,7 @@
     width:350px;
     height:368px;
     border-radius:50%;
-    background-color:#000000;
+    background-color:#19161A;;
 }
 
 .eye {
@@ -67,13 +65,24 @@
     right:45px;
 }
 
+.mouth-box {
+    width: 335px;
+    height: 135px;
+    left: 8px;
+    background-color: #19161A;
+    border-radius: 50%;
+    top: 177px;
+    z-index: 5;
+    position: absolute;
+}
+
 .mouth {
     width: 234px;
     height: 70px;
     border-radius: 50%;
     background: #FC9202;
-    left: 58px;
-    top: 211px;
+    left: 56px;
+    top: 11px;
     position: absolute;
     bottom: 35px;
 }
@@ -89,4 +98,98 @@
     border:8px solid #201E1F;
     border-right: 1px solid #201E1F;
     border-left: 1px solid #201E1F;
+}
+
+.body {
+    width: 385px;
+    height: 322px;
+    border-radius: 50%;
+    position: absolute;
+    top: 264px;
+    left: -16px;
+    z-index: 2;
+    background-color: #19161A;
+}
+
+.scarf {
+    width: 349px;
+    height: 190px;
+    left: 18px;
+    top: -87px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #ff0000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.3) inset;
+}
+
+.belly {
+    width: 313px;
+    height: 258px;
+    background: #fff;
+    border-radius: 50%;
+    left: 37px;
+    top: 49px;
+    position: absolute;
+    bottom: 10px;
+}
+
+.swing {
+    width: 46px;
+    height: 170px;
+    background: #1A1624;
+    border-radius: 50%;
+    top: 60px;
+    position: absolute;
+}
+
+.swing.left {
+    left: -14px;
+    transform: rotate(25deg);
+}
+
+.swing.right {
+    left: 344px;
+    top: 50px;
+    transform: rotate(-25deg);
+}
+
+.foot {
+    width: 157px;
+    height: 82px;
+    position: absolute;
+    top: 546px;
+    border: 3px solid #904605;
+    border-radius: 50%;
+    background-color: #F07203;
+}
+
+.foot.left {
+    transform: rotate(-4deg);
+}
+
+.foot.right {
+    transform: rotate(4deg);
+    left: 184px;
+}
+
+.claw{
+    width: 60px;
+    top: 1px;
+    height: 22px;
+    position: absolute;
+    border-radius: 50%;
+    border-top: 1px solid #904605;
+    background-color: #F07203;
+}
+
+.claw.left {
+    transform: rotate(-16deg);
+    border-left: 4px solid #904605;
+    left: 4px;
+}
+
+.claw.right {
+    transform: rotate(16deg);
+    border-right: 4px solid #904605;
+    left: 92px;
 }
