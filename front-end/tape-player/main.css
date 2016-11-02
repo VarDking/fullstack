@@ -3,6 +3,48 @@
     padding:0;
 }
 
+.tap-player {
+    width: 700px;
+    height: 500px;
+    margin: 6% auto;
+    position: relative;
+    padding-top: 70px;
+    background-color: #ECEBE9;
+    border-radius: 14px;
+    box-sizing: border-box;
+}
+
+/*磁带机*/
+.cassette {
+    width: 495px;
+    height: 316px;
+    background: #222831;
+    border-radius: 16px;
+    position: relative;
+    margin: 6% auto;
+}
+
+.screw {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position : absolute;
+    left :10px;
+    top :10px;
+}
+
+.screw:nth-child(1) {
+    right: 10px;
+    position : absolute;
+}
+
+.screw:nth-child(4) {
+    left: 100px;
+    position : absolute;
+}
+
+/*播放波形*/
 @keyframes waveAnimation {
     100% { height:25px;}
 }
@@ -10,28 +52,33 @@
 .audio-wave {
     width:60px;
     height:60px;
+    margin-bottom: 100px;
+    position: relative;
     background-color:#ea5468;
     border-radius:50%;
 }
 
-.audio-wave .bar {
+.bar {
     width: 2px;
     height: 5px;
-    display: inline-block;
+    left: 22px;
+    bottom: 14px;
     position: absolute;
-    left: 28px;
-    bottom:224px;
+    display: inline-block;
     background-color: #ffffff;
-    transition:all 0.25s ease-in;
-    animation:waveAnimation 0.3s ease-out infinite;
+    transition: all 0.25s ease-in;
+    animation  : waveAnimation 0.3s ease-out infinite;
 }
 
 .audio-wave span:nth-child(2){
-    left:22px;
+    margin-left: 6px;
     animation-direction:reverse;
 }
 
 .audio-wave span:nth-child(3){
-    left:34px;
+    margin-left: 12px;
     animation-direction:alternate-reverse;
 }
+
+
+
