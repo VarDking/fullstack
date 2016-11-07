@@ -97,3 +97,15 @@ cclose                        关闭qucikfix
 help vimgrep                  查看vimgrep帮助
 ```
 
+###折叠
+
+```
+" 基于缩进或语法进行代码折叠
+set foldmethod=indent
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+za  打开或关闭当前折叠 
+zM  关闭所有折叠 
+zR  打开所有折叠
+```
