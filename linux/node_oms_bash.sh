@@ -68,7 +68,7 @@ function startServer()
     cd $PROJECT_RUNNING_PATH
     echo $VERSION > version 
     
-    pm2 start pm2-config.json 
+    pm2 start pm2-config.json --env production 
     pm2 start cron.js --name ${PROJECT_NAME}-crontab
     pm2 ls
     echo "启动服务成功"
