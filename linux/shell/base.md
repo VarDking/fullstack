@@ -31,12 +31,16 @@ if [ -x file  ]    	# 文件存在且可执行
 ```
 
 示例：
+
 ```
 test -f "/usr/local/curl" && echo "curl is exist"
 ```
 
 ####整数变量表达式
+
+```
 -eq -ne -ge -gt -le -lt
+```
 
 ####字符串变量
 
@@ -47,3 +51,30 @@ if  [ -n $a  ]         # a 非空(非0），返回0(true)
 if  [ -z $a  ]         # a 为空
 if  [ $a ]             # a 非空，返回0 (和-n类似）
 ```
+
+####trap
+脚本捕捉信号并处理  
+常用的信号值1，2，3，15  
+1－－－－SIGHUP     挂起或父进程被杀死  
+2－－－－SIGINT     来自键盘的中断<CTRL + C>  
+3－－－－SIGQUIT    从键盘退出  
+15－－－－SIGTERM   软终止  
+
+```
+trap name signal(s)
+```
+
+####获取当前用户
+
+```
+id -u  // root:0
+whoami //当前用户
+```
+####双中括号
+
+```
+ name="ubuntu"
+ if [[ $name = *buntu* ]];then
+ 	echo "matched"
+```
+
