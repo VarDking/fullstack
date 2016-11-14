@@ -56,7 +56,7 @@
     margin-right : auto;
 }
 
-.m-banner .log, .m-banner .phone, .m-download .er-img, .m-download a, .m-download:after {
+.m-banner .logo, .m-banner .phone, .m-download .er-img, .m-download a, .m-download:after {
     background: url('../img/bg1.png') no-repeat 0 0;
 }
 
@@ -69,10 +69,18 @@
     background-position: -5px 0;
 }
 
-.g-layout .log {
+.g-layout .logo {
     width: 564px;
     height: 302px;
     float: right;
     margin-top: 98px;
     background-position: -5px -650px;
+}
+
+.g-layout .m-download {
+    right: 128px;
+    top: 430px;
+    width: 405px;
+    height: 146px;
+    position: absolute;
 }
