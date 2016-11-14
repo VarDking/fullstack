@@ -3,6 +3,10 @@
     padding:0;
 }
 
+body {
+    background-color: #F1F1F1;
+}
+
 .tap-player {
     width: 700px;
     height: 500px;
@@ -20,28 +24,30 @@
     height: 316px;
     background: #222831;
     border-radius: 16px;
-    position: relative;
     margin: 6% auto;
+    position: relative;
 }
 
 .screw {
     width: 14px;
     height: 14px;
     border-radius: 50%;
-    border: 1px solid white;
+    border: 1px solid red;
     position : absolute;
-    left :10px;
-    top :10px;
+    /*left :10px;*/
+    /*top :10px;*/
 }
 
 .screw:nth-child(1) {
-    right: 10px;
-    position : absolute;
+
+}
+
+.screw:nth-child(3) {
+    margin-left: 200px;
 }
 
 .screw:nth-child(4) {
     left: 100px;
-    position : absolute;
 }
 
 /*播放波形*/
