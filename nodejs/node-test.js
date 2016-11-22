@@ -23,7 +23,8 @@ function deptClockData(deptid, start, end) {
             portkey : 'c2f65e2bb6f74b3bbb2c163485b27d37'
         }
     }).then(result=> {
-        console.log('result.body',result.body);
+        console.log('result[0]',result[0]);
+        console.log('result[1]',result[1]);
         if (result.body && result.body.code) {
             return result.body.message;
         } else {
