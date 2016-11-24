@@ -1,0 +1,56 @@
+html, body {
+    width            : 100%;
+    height           : 100%;
+    color            : #666666;
+    background-color : #F1F1F1;
+}
+
+* {
+    margin  : 0;
+    padding : 0;
+}
+
+body {
+    border-top : 1px solid transparent;
+    background : url("../img/bg.jpg") repeat-y;
+}
+
+input, img {
+    vertical-align : middle;
+}
+
+.name {
+    height       : 38px;
+    line-height  : 38px;
+    color        : #ffffff;
+    font-size    : 20px;
+    position     : absolute;
+    top          : 100px;
+    left         : 140px;
+}
+
+.scancode {
+    width            : 390px;
+    height           : 620px;
+    padding-top      : 70px;
+    margin           : 10% auto 0 auto;
+    border-radius    : 5px;
+    box-sizing       : border-box;
+    background-color : #ffffff;
+}
+
+.scancode dl {
+    margin-left  : 40px;
+    margin-right : 40px;
+    padding-left : 35px;
+    text-align   : left;
+    line-height  : 1.5;
+}
+
+.scancode dl.a {
+    background : url('../img/yx_11.png') 0 center no-repeat;
+}
+
+.scancode dl.b {
+    background : url('../img/yx_14.png') 0 center no-repeat;
+}

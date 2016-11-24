@@ -1,5 +1,6 @@
 body, h1, h2, h3, p, ul {
-    margin : 0
+    margin  : 0;
+    padding : 0;
 }
 
 a {
@@ -104,4 +105,28 @@ body {
 .warn-text {
     color            : #ff0000;
     background-color : #FDF8E4;
+}
+
+.f-tc {
+    text-align : center;
+}
+
+.f-hide {
+    display : none;
+}
+
+.g-mt30 {
+    margin-top : 30px;
+}
+
+.g-mt50 {
+    margin-top : 50px;
+}
+
+.s-c-333 {
+    color : #333;
+}
+
+.s-f18 {
+    font-size : 18px;
 }
