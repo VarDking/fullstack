@@ -3,15 +3,105 @@ body, h1, h2, h3, p, ul {
 }
 
 a {
-    text-decoration: none;
+    text-decoration : none;
 }
 
-ul li{
-    list-style: none;
+ul li {
+    list-style : none;
 }
 
 body {
     min-width   : 1260px;
     font-size   : 14px;
     font-family : "Microsoft YaHei UI";
+}
+
+.float-left {
+    float : left;
+}
+
+.float-right {
+    float : right;
+}
+
+.inline {
+    display : inline;
+}
+
+.block {
+    display : block;
+}
+
+.title {
+    font-size   : 48px;
+    line-height : 1.6;
+}
+
+.col-md-3 {
+    width  : 25%;
+    height : auto;
+}
+
+.col-md-4 {
+    width  : 33.33%;
+    height : auto;
+}
+
+.col-md-5 {
+    width  : 41.66%;
+    height : auto;
+}
+
+.col-md-6 {
+    width  : 50%;
+    height : auto;
+}
+
+.col-md-7 {
+    width  : 58.33%;
+    height : auto;
+}
+
+.col-md-8 {
+    width  : 66.66%;
+    height : auto;
+}
+
+.col-md-9 {
+    width  : 75%;
+    height : auto;
+}
+
+.main-text {
+    font-size : 30px;
+    color     : #999;
+}
+
+.big-pic {
+    width  : 451px;
+    height : 452px;
+}
+
+.middle-pic {
+    width  : 247px;
+    height : 247px;
+}
+
+.small-pic {
+    width  : 183px;
+    height : 183px;
+}
+
+.content-column {
+    width         : 1260px;
+    height        : 620px;
+    padding-top   : 108px;
+    position      : relative;
+    margin        : 0 auto;
+    border-bottom : 1px solid #ECEBE9;
+}
+
+.warn-text {
+    color            : #ff0000;
+    background-color : #FDF8E4;
 }
