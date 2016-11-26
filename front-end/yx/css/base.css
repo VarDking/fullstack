@@ -130,3 +130,8 @@ body {
 .s-f18 {
     font-size : 18px;
 }
+
+.center {
+    width  : 600px;
+    margin : 0 auto;
+}

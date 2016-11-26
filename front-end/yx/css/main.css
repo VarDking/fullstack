@@ -288,11 +288,6 @@ a.logo {
     text-align : center;
 }
 
-.center {
-    width  : 600px;
-    margin : 0 auto;
-}
-
 .footer-download:after {
     background-position : -581px -128px;
 }
