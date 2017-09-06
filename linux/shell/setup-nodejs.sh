@@ -2,7 +2,8 @@
 # written by Mr.chen.
 # install node.js
 
-version="8.4.0"
+# 默认8.4.0
+version=${1-"8.4.0"}
 
 #操作确认
 read -p "是否确认移除旧版Node.js ? (yN)" SURE
@@ -24,6 +25,7 @@ rm -r /usr/local/bin/npm
 rm -r /usr/local/bin/npx
 rm -r /usr/local/share/doc/node
 rm -r /usr/local/share/man/man1/node*
+rm -r /usr/local/lib/node_modules/npm
 
 # 卸载node依赖(非必须)
 #rm -r /usr/local/include/node 
