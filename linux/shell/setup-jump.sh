@@ -5,4 +5,6 @@ echo "install jump"
 wget https://github.com/gsamokovarov/jump/releases/download/v0.13.0/jump_0.13.0_amd64.deb
 dpkg -i jump_0.13.0_amd64.deb
 rm jump_0.13.0_amd64.deb
+echo -e '# bind jum shell \neval "$(jump shell --bind=j)"' >> ~/.bashrc
+source ~/.bashrc
 echo "install jump finished"
