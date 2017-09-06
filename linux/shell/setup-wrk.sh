@@ -4,7 +4,7 @@
 echo "install wrk"
 git clone https://github.com/wg/wrk.git wrk
 cd wrk
-make
+make -j$(nproc)
 cp wrk /usr/local/bin
 cd ..
 rm -r wrk
