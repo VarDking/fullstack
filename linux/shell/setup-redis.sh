@@ -7,7 +7,7 @@ echo "This script must be run as root" 1>&2
 exit 1
 fi
 
-version=""
+version=${1-"2.8.0"}
 
 mkdir _install
 cd _install
