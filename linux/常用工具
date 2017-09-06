@@ -1,0 +1,7 @@
+# 网络管理工具
+apt-get install net-tools
+# 开发组件
+apt-get install build-essential
+
+# 安装python
+apt-get install python
