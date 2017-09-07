@@ -37,9 +37,6 @@ make && make install
 ln -s libjpeg-9a /usr/local/libjpeg
 cd ${tmp_path}
 
-# zlib依赖
-apt-get install zlib1g zlib1g-dev -y
-
 # 支持png格式
 wget http://download.sourceforge.net/libpng/libpng-1.6.18.tar.gz
 tar -xzvf libpng-1.6.18.tar.gz
@@ -69,5 +66,5 @@ make && make install && make check
 ln -s graphicsmagick-1.3.22 /usr/local/graphicsmagick
 cd ${tmp_path}/../
 
-# rm -f ${tmp_path}
+rm -r ${tmp_path}
 echo "安装成功"
