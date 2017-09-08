@@ -13,4 +13,4 @@ echo "updating apt-get..."
 bash -c "apt-get update -qq -y < /dev/null" > /dev/null
 
 echo "installing git, wget, curl, build-essential, rsync, pkg-config, python..."
-bash -c "apt-get install -qq -y git wget curl build-essential rsync pkg-config python < /dev/null" > /dev/null 2>/dev/null
+bash -c "apt-get install -qq -y git wget curl build-essential rsync pkg-config python< /dev/null" > /dev/null 2>/dev/null

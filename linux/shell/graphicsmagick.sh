@@ -12,7 +12,7 @@ if [ "$(id -u)" != "0" ]; then
 echo "This script must be run as root" 1>&2
 exit 1
 fi
-
+	
 echo "开始安装"
 # 开发环境
 apt-get install make git g++ gcc zlib1g zlib1g-dev libxml2 libxml2-dev -y
@@ -57,7 +57,7 @@ wget http://download.sourceforge.net/graphicsmagick/GraphicsMagick-1.3.22.tar.gz
 tar -xzvf GraphicsMagick-1.3.22.tar.gz
 cd GraphicsMagick-1.3.22
 ./configure \
-  LDFLAGS="-L/usr/local/libjpeg/lib -L/usr/local/libpng/lib -L/usr/local/libtiff/lib" \
+  LDFLAGS="-L/usr/local/libjpeg-9a/lib -L/usr/local/libpng/lib -L/usr/local/libtiff/lib" \
   CPPFLAGS="-I/usr/local/libjpeg-9a/include -I/usr/local/libpng/include -I/usr/local/libtiff/include"
 
 make && make install && make check

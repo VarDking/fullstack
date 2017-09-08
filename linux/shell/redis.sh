@@ -1,13 +1,15 @@
 #!/bin/bash
 ## 安装redis-server
 
+default_version="2.8.0"
+
 # root 权限
 if [ "$(id -u)" != "0" ]; then
 echo "This script must be run as root" 1>&2
 exit 1
 fi
 
-version=${1-"2.8.0"}
+version=${1-"$default_version"}
 
 mkdir _install
 cd _install
@@ -23,7 +25,6 @@ adduser --system --group --no-create-home redis
 mkdir -p /var/lib/redis
 chown redis:redis /var/lib/redis
 chmod 770 /var/lib/redis
-
 cp redis-stable/redis.conf /etc/redis
 
 ## 手动修改配置文件
