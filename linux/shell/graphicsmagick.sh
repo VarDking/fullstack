@@ -58,7 +58,7 @@ tar -xzvf GraphicsMagick-1.3.22.tar.gz
 cd GraphicsMagick-1.3.22
 ./configure \
   LDFLAGS="-L/usr/local/libjpeg/lib -L/usr/local/libpng/lib -L/usr/local/libtiff/lib" \
-  CPPFLAGS="-I/usr/local/libjpeg/include -I/usr/local/libpng/include -I/usr/local/libtiff/include"
+  CPPFLAGS="-I/usr/local/libjpeg-9a/include -I/usr/local/libpng/include -I/usr/local/libtiff/include"
 
 make && make install && make check
 cd ${tmp_path}/../
