@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/nav.js"></script>
+    <link href="./dist/css/nav.css" rel="stylesheet">
+    <title>导航栏测试</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 20px !important;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: initial;
+        }
+
+        body {
+            position: relative !important;
+            overflow: auto;
+            font: 400 14px/1.5 "Open Sans", sans-serif;
+            color: #3d4145;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav-bar">
+    <div class="container clearfix">
+        <h1 class="nav-title">
+            <a href="/" data-ignore="push">w3school</a>
+        </h1>
+        <div class="nav-content">
+            <a class="nav-trigger icon icon-menu pull-right" href="#"></a>
+            <div class="nav-group">
+                <a class="nav-item" href="/">首页</a>
+                <a class="nav-item" href="/getting-started">开始使用</a>
+                <a class="nav-item" href="/components">基础组件</a>
+                <a class="nav-item" href="/extends">拓展组件</a>
+                <a class="nav-item" href="/examples">案例</a>
+                <a class="nav-item" href="" target="_blank">下载</a>
+                <a class="nav-item" href="/changelog">更新日志</a>
+                <a class="nav-item" href="" target="_blank">github</a>
+                <a class="nav-item" href="/about">关于</a>
+                <a class="nav-item" href="http://light7.org/">English</a>
+                <a class="nav-item" href="">jQuery WeUI</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

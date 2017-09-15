@@ -1,0 +1,148 @@
+@import 'icons';
+
+$masthead-padding-top: 15px;
+$masthead-padding-bottom: 15px;
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin nav-link() {
+  color: #fff;
+  -webkit-transition: opacity .2s linear;
+  -o-transition: opacity .2s linear;
+  transition: opacity .2s linear;
+}
+
+@mixin nav-link-active() {
+  color: #fff;
+  opacity: .5;
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.nav-bar {
+  position: relative;
+  padding-top: $masthead-padding-top;
+  padding-bottom: $masthead-padding-bottom;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  background-color: #b72f20;
+  min-height: 52px;
+
+  a {
+    outline: 0;
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+
+  .container {
+    height: 1rem;
+    position: relative;
+    max-width: 1400px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.nav-title {
+  position: absolute;
+  left: 50%;
+  z-index: 20;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1;
+  transform: translateX(-50%);
+
+  a {
+    @include nav-link();
+    &:active,
+    &:focus {
+      @include nav-link-active();
+    }
+  }
+}
+
+.nav-content {
+  .nav-trigger {
+    position: absolute;
+    top: -.5rem;
+    right: 1.5rem;
+    font-size: 28px;
+    color: #fff;
+    opacity: .7;
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  .nav-group {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, .9);
+    opacity: 0;
+    &.active {
+      height: auto;
+      opacity: 1;
+    }
+  }
+
+  .nav-item {
+    display: block;
+    padding: 20px 15px;
+    font-size: 22px;
+    @include nav-link();
+    &:active,
+    &:focus {
+      @include nav-link-active();
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-title {
+    position: static;
+    float: left;
+    font-weight: 300;
+    transform: translateX(0);
+  }
+
+  .nav-content {
+    float: right;
+    .nav-trigger {
+      display: none;
+    }
+
+    .nav-group {
+      position: static;
+      display: block;
+      height: auto;
+      background-color: transparent;
+      opacity: 1;
+    }
+
+    .nav-item {
+      position: relative;
+      display: inline-block;
+      padding: 0 15px;
+      font-size: 14px;
+    }
+  }
+}
