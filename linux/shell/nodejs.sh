@@ -37,7 +37,8 @@ echo "install node v${version}"
 tmp_path=~/_install_tmp
 mkdir -p ${tmp_path}
 cd ${tmp_path}
-wget https://nodejs.org/dist/v${version}/node-v${version}-linux-x64.tar.gz
+#wget https://nodejs.org/dist/v${version}/node-v${version}-linux-x64.tar.gz
+wget https://npm.taobao.org/mirrors/node/v${version}/node-v${version}-linux-x64.tar.gz
 
 cd /usr/local
 tar --strip-components 1 -xzf ${tmp_path}/node-v${version}-linux-x64.tar.gz
