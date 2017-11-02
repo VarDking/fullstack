@@ -61,7 +61,7 @@ tar -xzvf nginx-1.13.1.tar.gz && cd nginx-1.13.1
             --with-http_gunzip_module \
             --with-http_gzip_static_module \
             --with-http_mp4_module \
-            --with-http_random_index_module \	
+            --with-http_random_index_module \
             --with-http_realip_module \
             --with-http_slice_module \
             --with-http_ssl_module \
