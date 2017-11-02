@@ -3,7 +3,7 @@
 # install node.js
 
 # 默认8.4.0
-version=${1-"8.4.0"}
+version=${1-"8.9.0"}
 
 #操作确认
 read -p "是否确认移除旧版Node.js ? (yN)" SURE
