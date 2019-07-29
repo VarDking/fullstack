@@ -50,3 +50,13 @@ consul agent -server -ui -bootstrap-expect=3 -data-dir=/data/consul -node=agent-
 consul agent -server -ui -bootstrap-expect=3 -data-dir=/data/consul -node=agent-3 -client=0.0.0.0 -bind=172.16.1.220 -datacenter=dc1 -join 172.16.1.218
 
 ```
+
+## 其他工具
+- consul-template https://github.com/hashicorp/consul-template
+- Registrator 
+
+
+## 参考
+- consul 支持多数据中心的服务发现与配置共享工具  https://www.jianshu.com/p/3d074ed76a68
+- consul 负载均衡  https://tonybai.com/2018/09/10/setup-service-discovery-and-load-balance-based-on-consul/
+- istio https://tonybai.com/2018/01/03/an-intro-of-microservices-governance-by-istio/
