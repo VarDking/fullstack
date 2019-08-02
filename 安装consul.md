@@ -60,3 +60,6 @@ consul agent -server -ui -bootstrap-expect=3 -data-dir=/data/consul -node=agent-
 - consul 支持多数据中心的服务发现与配置共享工具  https://www.jianshu.com/p/3d074ed76a68
 - consul 负载均衡  https://tonybai.com/2018/09/10/setup-service-discovery-and-load-balance-based-on-consul/
 - istio https://tonybai.com/2018/01/03/an-intro-of-microservices-governance-by-istio/
+- Consul + fabio 实现自动服务发现、负载均衡 http://dockone.io/article/1567
+- consul 支持多数据中心 https://www.jianshu.com/p/3d074ed76a68?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
+- consul 支持多数据中心的服务发现与配置共享工具 https://deepzz.com/post/the-consul-of-discovery-and-configure-services.html
