@@ -4,7 +4,7 @@
   "private": false,
   "dependencies": {
     "chalk": "^2.3.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.19",
     "shelljs": "^0.7.8"
   }
 }
